@@ -1,6 +1,6 @@
 <template>
   <Button class="url-button" @click="copyUrl">
-    {{ this.appUrl }}<span class="url-button__video-id">{{videoId}}</span>
+    {{ this.appUrl }}/<span class="url-button__video-id">{{videoId}}</span>
     <span class="url-button__username">?username={{username}}</span>
   </Button>
 </template>
