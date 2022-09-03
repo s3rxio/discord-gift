@@ -1,30 +1,33 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <main>
+    <Background />
+    <div class="wrapper">
+      <router-view/>
+    </div>
+  </main>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+import { defineComponent } from "vue";
+import Background from "./components/UI/Background.vue"
 
-nav {
-  padding: 30px;
+export default defineComponent({
+  name: "HomeView",
+  components: {
+    Background
+  },
+});
+</script>
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+<style scoped lang="scss">
+.wrapper {
+  position: absolute;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100vh;
 }
 </style>
