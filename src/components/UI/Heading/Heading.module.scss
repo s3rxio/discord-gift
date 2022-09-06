@@ -1,0 +1,22 @@
+.heading {
+    color: var(--white);
+    font-family: var(--font-secondary);
+
+    &_large {
+        font-size: 3em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &_medium {
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    &_small {
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}

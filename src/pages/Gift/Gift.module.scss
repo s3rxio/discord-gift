@@ -1,6 +1,7 @@
 .gift {
-
-  &__container {
-
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 }

@@ -1,13 +1,11 @@
-import React, {FC, HTMLAttributes} from "react";
+import React, {FC} from "react";
+import clsx from "clsx";
 import styles from "./Container.module.scss";
-import {ContainerProps} from "../../../interfaces";
+import {BaseElementProps} from "../../../interfaces";
 
-const Container: FC<ContainerProps> = (props) => {
-    return (
-        <div className={`${styles.container} ${props.className ? props.className : ""}`}>
-            {props.children}
-        </div>
-    );
+const Container: FC<BaseElementProps> = (props) => {
+    const rootStyles = clsx(styles.container);
+    return <div className={clsx(rootStyles, props.className)}>{props.children}</div>;
 };
 
 export default Container;
