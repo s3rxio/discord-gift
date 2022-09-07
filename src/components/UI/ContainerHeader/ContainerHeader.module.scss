@@ -1,0 +1,9 @@
+.container {
+  &__header {
+    display: flex;
+
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
