@@ -1,0 +1,23 @@
+.alert {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  padding: 15px 25px;
+  margin: 20px;
+
+  background-color: var(--gray);
+  border-radius: 3px;
+
+  transition: all .5s;
+  z-index: 999;
+
+  &_hidden {
+    opacity: 0;
+    right: -100%;
+  }
+
+  &__message {
+    display: block;
+  }
+}

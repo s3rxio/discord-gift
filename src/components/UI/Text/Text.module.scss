@@ -1,0 +1,14 @@
+.text {
+  font-family: var(--font-primary);
+  font-size: inherit;
+  font-weight: 400;
+
+  color: inherit;
+  &_default {
+    color: var(--white);
+  }
+
+  &_muted {
+    color: var(--muted);
+  }
+}

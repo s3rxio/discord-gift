@@ -1,16 +1,16 @@
 :root {
-  --background-color-1: #202225;
-  --background-color-2: #36393f;
+  --white: #ffffff;
+  --black: #202225;
 
-  --text-color-1: #ffffff;
-  --text-color-2: #b9bbbe;
+  --gray: #36393f;
+  --gray-light: #b9bbbe;
 
-  --text-link-color: #00aff4;
-
-  --button-color: #5865f2;
-  --button-color-hover: #4752c4;
-
+  --brand: #5865f2;
   --purple: #EB459E;
+
   --green: #57F287;
   --yellow: #FEE75C;
+
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
 }
