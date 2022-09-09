@@ -4,7 +4,7 @@
   justify-content: center;
 
   gap: 8px;
-  padding: 32px;
+  padding: 32px clamp(10px, 4vw, 32px);
 
   color: var(--gray-light);
   background-color: var(--gray);
