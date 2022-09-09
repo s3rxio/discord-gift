@@ -13,4 +13,16 @@
 
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
+
+  --contianer-width: 480px;
+
+  --section-spacing: 20px;
+  --section-padding: 20px;
+  
+  @media (max-width: 628px) {
+    --section-spacing: 20px;
+    --section-padding: 0;
+
+    --contianer-width: 100%;
+  }
 }

@@ -3,5 +3,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
+
+    margin-top: var(--section-spacing);
+    @media (max-width: 325px) {
+      flex-direction: column;
+    }
   }
 }

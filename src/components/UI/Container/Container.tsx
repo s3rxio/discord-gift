@@ -5,7 +5,7 @@ import {BaseElementProps} from "../../../interfaces";
 
 const Container: FC<BaseElementProps> = (props) => {
     const rootStyles = clsx(styles.container);
-    return <div className={clsx(rootStyles, props.className)}>{props.children}</div>;
+    return <div {...props} className={clsx(rootStyles, props.className)}>{props.children}</div>;
 };
 
 export default Container;

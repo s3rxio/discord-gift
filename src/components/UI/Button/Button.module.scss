@@ -1,8 +1,8 @@
 .button {
   font-size: 16px;
-
   line-height: 24px;
   text-align: center;
+  word-wrap: anywhere;
 
   transition: all .3s;
   border-radius: 3px;
@@ -12,7 +12,7 @@
   color: var(--white);
 
   &:hover {
-    background: #4752c4;
+    background-color: #4752c4;
   }
 }
 

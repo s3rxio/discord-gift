@@ -19,11 +19,23 @@ const Gift = () => {
     const {videoId} = params;
     const username = searchParams.get("username");
 
+    if(!videoId || !username || videoId.length !== 11 || username.length > 32)
+        return (
+            <Section>
+                <Container>
+                    <ContainerHeader>
+                        <Heading size="small">Invalid gift</Heading>
+                        <Text color="muted" align="center">Sorry, this gift is invalid.</Text>
+                    </ContainerHeader>
+                </Container>
+            </Section>
+        );
+
     return (
-        <Section className={styles.gift}>
-            <Container className={styles.gift__container}>
+        <Section>
+            <Container>
                 <ContainerHeader>
-                    <Text color="muted">
+                    <Text color="muted" wrap="anywhere">
                         {username} gifted you
                     </Text>
 

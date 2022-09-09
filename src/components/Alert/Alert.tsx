@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import clsx from "clsx";
 import styles from "./Alert.module.scss";
 import {AlertProps} from "../../interfaces";
-import {Text} from "../UI";
+import {Container, Text} from "../UI";
 
 const Alert: FC<AlertProps> = (props) => {
     const {showAlert, setShowAlert } = props;
@@ -12,11 +12,11 @@ const Alert: FC<AlertProps> = (props) => {
 
     const rootStyles = clsx(styles.alert, !showAlert && styles.alert_hidden)
     return (
-        <div className={rootStyles}>
+        <Container className={rootStyles}>
             <Text color="default" className={styles.alert__message}>
                 {props.message}
             </Text>
-        </div>
+        </Container>
     );
 };
 
