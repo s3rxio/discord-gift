@@ -11,4 +11,25 @@
   &_muted {
     color: var(--muted);
   }
+
+  &_anywhere {
+    word-wrap: anywhere;
+  }
+
+  &_break-word {
+    word-wrap: break-word;
+  }
+
+  &_left {
+      text-align: left;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_right {
+    text-align: right;
+  }
+
 }

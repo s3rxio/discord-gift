@@ -22,7 +22,10 @@ interface HeadingProps extends BaseElementProps {
 }
 
 interface TextProps extends BaseElementProps {
-    color: "default" | "muted";
+    color?: "default" | "muted";
+
+    align?: "left" | "center" | "right";
+    wrap?: "anywhere" | "break-word"
 }
 
 interface InputProps extends BaseElementProps {

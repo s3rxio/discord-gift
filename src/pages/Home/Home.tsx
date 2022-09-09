@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import clsx from "clsx";
-import styles from "./Home.module.scss";
 import sectionStyles from "../../components/UI/Section/Section.module.scss";
 import {
     Button,
@@ -21,10 +19,10 @@ const Home = () => {
 
     const [showAlert, setShowAlert] = useState(false);
     return (
-        <Section className={styles.home}>
+        <Section>
             <Alert showAlert={showAlert} setShowAlert={setShowAlert} delay={3000} message="Copied to clipboard!" />
-            <Container className={styles.home__container}>
-                <ContainerHeader className={clsx(styles.home__container__header, sectionStyles.section__spacing_bottom)}>
+            <Container>
+                <ContainerHeader className={sectionStyles.section__spacing_bottom}>
                     <Heading size="small">
                         Joke Gift Generator
                     </Heading>
@@ -33,16 +31,16 @@ const Home = () => {
                     </Text>
                 </ContainerHeader>
 
-                <Label className={clsx(styles.home__label)}>
+                <Label>
                     Username
                 </Label>
-                <Input type="text" className={styles.home__input} placeholder="Wumpus" maxLength={32} value={username} onChange={ev => setUsername(ev.target.value)} />
+                <Input type="text" placeholder="Wumpus" maxLength={32} value={username} onChange={ev => setUsername(ev.target.value)} />
 
-                <Label className={clsx(styles.home__label)}>
+                <Label>
                     Youtube Video ID
                 </Label>
 
-                <Input type="text" className={styles.home__input} placeholder="dQw4w9WgXcQ" maxLength={11} value={videoId} onChange={ev => setVideoId(ev.target.value)} />
+                <Input type="text" placeholder="dQw4w9WgXcQ" maxLength={11} value={videoId} onChange={ev => setVideoId(ev.target.value)} />
 
                 <Button href="#" className={sectionStyles.section__spacing_top} onClick={() => {navigator.clipboard.writeText(giftUrl).then(() => setShowAlert(true))}}>
                     {giftUrl}
